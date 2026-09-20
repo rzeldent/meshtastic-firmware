@@ -1,0 +1,29 @@
+#define HAS_GPS 0
+#undef GPS_RX_PIN
+#undef GPS_TX_PIN
+
+#define HAS_SCREEN 1
+#define USE_SSD1306
+
+#define I2C_SDA SDA
+#define I2C_SCL SCL
+
+#define BUTTON_PIN 0 // This is the BOOT button
+#define BUTTON_NEED_PULLUP
+
+#define USE_SX1262
+#define LORA_SCK SCK
+#define LORA_MISO MISO
+#define LORA_MOSI MOSI
+#define LORA_CS SS
+#define LORA_DIO0 RADIOLIB_NC
+#define LORA_RESET 5
+#define LORA_DIO1 3
+#define LORA_DIO2 RADIOLIB_NC
+#define LORA_BUSY 4
+#define SX126X_CS LORA_CS
+#define SX126X_DIO1 LORA_DIO1
+#define SX126X_BUSY LORA_BUSY
+#define SX126X_RESET LORA_RESET
+#define SX126X_DIO2_AS_RF_SWITCH
+#define SX126X_DIO3_TCXO_VOLTAGE 1.8
